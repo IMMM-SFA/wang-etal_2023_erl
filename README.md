@@ -58,4 +58,4 @@ Use the scripts found in the `figures` directory to reproduce the figures used i
 
 | Script Name | Description | How to Run |
 | --- | --- | --- |
-| `fig*.ncl` | Script to generate my figures | `ncl fig*.ncl` |
+| `*.ncl` | Script to generate my figures | `ncl *.ncl` |
