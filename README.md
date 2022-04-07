@@ -4,7 +4,7 @@ _your zenodo badge here_
 
 **Decipher the sensitivity of urban canopy air temperature to anthropogenic heat flux with a forcing-feedback framework**
 
-Linying Wang<sup>1\*</sup> and Dan Li<sup>1\*</sup>
+Linying Wang<sup>1\</sup> and Dan Li<sup>1\*</sup>
 
 <sup>1 </sup> Department of Earth and Environment, Boston University, 685 Commonwealth Avenue, Boston, MA 02215, USA 
 
@@ -33,7 +33,7 @@ https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata/
 | Model | Version | Repository Link | DOI |
 |-------|---------|-----------------|-----|
 | CESM2 | release-cesm2.0.1 | https://github.com/ESCOMP/CESM/releases/tag/release-cesm2.0.1 |  |
-| the land component (CLM5) | release-cesm2.0.02 | https://github.com/ESCOMP/CTSM/tree/release-cesm2.0.02 |  |
+| land component (CLM5) | release-cesm2.0.02 | https://github.com/ESCOMP/CTSM/tree/release-cesm2.0.02 |  |
 
 ## Reproduce my experiment
 
@@ -51,8 +51,7 @@ https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata/
 
 | Script Name | Description | How to Run |
 | --- | --- | --- |
-| `anth.f90` | Script for post-processing CLMU outputs | `ifort -g -CB -fpe0 -traceback anth2.f90 -L/opt/cray/pe/netcdf/4.6.3.2/intel/19.0/lib -lnetcdff -lnetcdf -I/opt/cray/pe/netcdf/4.6.3.2/intel/19.0/include -o a.out
-./a.out` |
+| `anth.f90` | Script for post-processing CLMU outputs | `ifort -g -CB -fpe0 -traceback anth2.f90 -L/opt/cray/pe/netcdf/4.6.3.2/intel/19.0/lib -lnetcdff -lnetcdf -I/opt/cray/pe/netcdf/4.6.3.2/intel/19.0/include -o a.out                             ./a.out` |
 
 ## Reproduce my figures
 Use the scripts found in the `figures` directory to reproduce the figures used in this publication.
