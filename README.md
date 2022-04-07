@@ -15,6 +15,8 @@ Energy consumption is increasing strikingly with population and economic develop
 
 ## Journal reference
 
+Wang, L., & Li, D. (2021). Decipher the sensitivity of urban canopy air temperature to anthropogenic heat flux with a forcing-feedback framework. Journal of Climate, to be submitted.
+
 ## Code reference
 
 Linying Wang. (2021). IMMM-SFA-URBAN_GREEN_ROOF_CESM2 (1.0). Zenodo. https://doi.org/10.5281/zenodo.4482784
@@ -33,7 +35,6 @@ https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata/
 | Model | Version | Repository Link | DOI |
 |-------|---------|-----------------|-----|
 | CESM2 | release-cesm2.0.1 | https://github.com/ESCOMP/CESM/releases/tag/release-cesm2.0.1 |  |
-| land component (CLM5) | release-cesm2.0.02 | https://github.com/ESCOMP/CTSM/tree/release-cesm2.0.02 |  |
 
 ## Reproduce my experiment
 
