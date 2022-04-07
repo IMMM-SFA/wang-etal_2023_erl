@@ -15,11 +15,10 @@ Energy consumption is increasing strikingly with population and economic develop
 
 ## Journal reference
 
-Wang, L., & Li, D. (2021). Decipher the sensitivity of urban canopy air temperature to anthropogenic heat flux with a forcing-feedback framework. Journal of Climate, to be submitted.
+Wang, L., & Li, D. (2021). Decipher the sensitivity of urban canopy air temperature to anthropogenic heat flux with a forcing-feedback framework. Journal of Climate, in preparation.
 
 ## Code reference
 
-Linying Wang. (2021). IMMM-SFA-URBAN_GREEN_ROOF_CESM2 (1.0). Zenodo. https://doi.org/10.5281/zenodo.4482784
 
 ## Data reference
 
@@ -38,14 +37,14 @@ https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata/
 
 ## Reproduce my experiment
 
-1. Install the software components required to conduct the experiement from [Contributing modeling software](#contributing-modeling-software)
+1. Install the software components required to conduct the experiement from [Contributing modeling software](#contributing-modeling-software). The detailed download instructions are also available online (https://www.cesm.ucar.edu/models/cesm2/release_download.html).
 2. Download and install the supporting input data required to conduct the experiement from [Input data](#input-data)
 3. Run the following scripts in the `workflow` directory to re-create this experiment:
 
 | Script Name | Description | How to Run |
 | --- | --- | --- |
-| `urban_I2000Clm50SpGs_CONUS_NLDAS2_spinup.sh` | Script to run the first part of my experiment | `./urban_I2000Clm50SpGs_CONUS_NLDAS2_spinup.sh` |
-| `urban_I2000Clm50SpGs_CONUS_NLDAS2_AH.sh` | Script to run the last part of my experiment | `./urban_I2000Clm50SpGs_CONUS_NLDAS2_AH.sh` |
+| `urban_I2000Clm50SpGs_CONUS_NLDAS2_spinup.sh` | Script to run the first part of my experiment (spinup) | `./urban_I2000Clm50SpGs_CONUS_NLDAS2_spinup.sh` |
+| `urban_I2000Clm50SpGs_CONUS_NLDAS2_AH.sh` | Script to run the last part of my experiment (CTL, AH1, AH2, AH3) | `./urban_I2000Clm50SpGs_CONUS_NLDAS2_AH.sh` |
 
 4. Download and unzip the output data from my experiment [Output data](#output-data)
 5. Run the following scripts in the `workflow` directory for post-processing my outputs
