@@ -33,11 +33,11 @@ https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata/
 ## Contributing modeling software
 | Model | Version | Repository Link | DOI |
 |-------|---------|-----------------|-----|
-| CESM2 | release-cesm2.0.1 | https://github.com/ESCOMP/CESM/releases/tag/release-cesm2.0.1 |  |
+| CESM2 | release-cesm2.0.1 | https://github.com/ESCOMP/CESM/releases/tag/release-cesm2.0.1 | 10.1029/2019MS001916 |
 
 ## Reproduce my experiment
 
-1. Install the software components required to conduct the experiement from [Contributing modeling software](#contributing-modeling-software). The detailed download instructions are also available online (https://www.cesm.ucar.edu/models/cesm2/release_download.html).
+1. Install the software components required to conduct the experiement from [Contributing modeling software](#contributing-modeling-software). The detailed download instructions are also available online https://www.cesm.ucar.edu/models/cesm2/release_download.html.
 2. Download and install the supporting input data required to conduct the experiement from [Input data](#input-data)
 3. Run the following scripts in the `workflow` directory to re-create this experiment:
 
@@ -58,4 +58,4 @@ Use the scripts found in the `figures` directory to reproduce the figures used i
 
 | Script Name | Description | How to Run |
 | --- | --- | --- |
-| `*.ncl` | Script to generate my figures | `ncl *.ncl` |
+| `figure_name.ncl` | Script to generate my figures | `ncl figure_name.ncl` |
