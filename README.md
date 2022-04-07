@@ -17,17 +17,23 @@ Energy consumption is increasing strikingly with population and economic develop
 
 ## Code reference
 
+Linying Wang. (2021). IMMM-SFA-URBAN_GREEN_ROOF_CESM2 (1.0). Zenodo. https://doi.org/10.5281/zenodo.4482784
+
 ## Data reference
 
 ### Input data
 
+https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata/
+
 ### Output data
+
+
 
 ## Contributing modeling software
 | Model | Version | Repository Link | DOI |
 |-------|---------|-----------------|-----|
 | CESM2 | release-cesm2.0.1 | https://github.com/ESCOMP/CESM/releases/tag/release-cesm2.0.1 |  |
-| CLM5 | release-cesm2.0.02 | https://github.com/ESCOMP/CTSM/tree/release-cesm2.0.02 |  |
+| the land component (CLM5) | release-cesm2.0.02 | https://github.com/ESCOMP/CTSM/tree/release-cesm2.0.02 |  |
 
 ## Reproduce my experiment
 
@@ -37,19 +43,20 @@ Energy consumption is increasing strikingly with population and economic develop
 
 | Script Name | Description | How to Run |
 | --- | --- | --- |
-| `step_one.py` | Script to run the first part of my experiment | `python3 step_one.py -f /path/to/inputdata/file_one.csv` |
-| `step_two.py` | Script to run the last part of my experiment | `python3 step_two.py -o /path/to/my/outputdir` |
+| `urban_I2000Clm50SpGs_CONUS_NLDAS2_spinup.sh` | Script to run the first part of my experiment | `./urban_I2000Clm50SpGs_CONUS_NLDAS2_spinup.sh` |
+| `urban_I2000Clm50SpGs_CONUS_NLDAS2_AH.sh` | Script to run the last part of my experiment | `./urban_I2000Clm50SpGs_CONUS_NLDAS2_AH.sh` |
 
 4. Download and unzip the output data from my experiment [Output data](#output-data)
-5. Run the following scripts in the `workflow` directory to compare my outputs to those from the publication
+5. Run the following scripts in the `workflow` directory for post-processing my outputs
 
 | Script Name | Description | How to Run |
 | --- | --- | --- |
-| `compare.py` | Script to compare my outputs to the original | `python3 compare.py --orig /path/to/original/data.csv --new /path/to/new/data.csv` |
+| `anth.f90` | Script for post-processing CLMU outputs | `ifort -g -CB -fpe0 -traceback anth2.f90 -L/opt/cray/pe/netcdf/4.6.3.2/intel/19.0/lib -lnetcdff -lnetcdf -I/opt/cray/pe/netcdf/4.6.3.2/intel/19.0/include -o a.out
+./a.out` |
 
 ## Reproduce my figures
 Use the scripts found in the `figures` directory to reproduce the figures used in this publication.
 
 | Script Name | Description | How to Run |
 | --- | --- | --- |
-| `generate_figures.py` | Script to generate my figures | `python3 generate_figures.py -i /path/to/inputs -o /path/to/outuptdir` |
+| `fig*.ncl` | Script to generate my figures | `ncl fig*.ncl` |
