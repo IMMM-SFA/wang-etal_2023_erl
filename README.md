@@ -51,7 +51,7 @@ https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata/
 
 | Script Name | Description | How to Run |
 | --- | --- | --- |
-| `anth.f90` | Script for post-processing CLMU outputs | `ifort -g -CB -fpe0 -traceback anth2.f90 -L/opt/cray/pe/netcdf/4.6.3.2/intel/19.0/lib -lnetcdff -lnetcdf -I/opt/cray/pe/netcdf/4.6.3.2/intel/19.0/include -o a.out                             ./a.out` |
+| `anth.f90` | Script for post-processing CLMU outputs | `ifort -g -CB -fpe0 -traceback anth.f90 -L/opt/cray/pe/netcdf/4.6.3.2/intel/19.0/lib -lnetcdff -lnetcdf -I/opt/cray/pe/netcdf/4.6.3.2/intel/19.0/include -o a.out`  `./a.out` |
 
 ## Reproduce my figures
 Use the scripts found in the `figures` directory to reproduce the figures used in this publication.
