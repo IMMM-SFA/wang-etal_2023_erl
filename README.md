@@ -4,11 +4,14 @@ _your zenodo badge here_
 
 **Decipher the sensitivity of urban canopy air temperature to anthropogenic heat flux with a forcing-feedback framework**
 
-Linying Wang\*<sup>1</sup>, Ting Sun<sup>2\*</sup>, Wenyu Zhou<sup>3\*</sup>, Maofeng Liu<sup>4\*</sup> and Dan Li<sup>1</sup>
+Linying Wang\*<sup>1</sup>, Ting Sun<sup>2</sup>, Wenyu Zhou<sup>3</sup>, Maofeng Liu<sup>4</sup> and Dan Li<sup>1</sup>
 
 <sup>1 </sup> Department of Earth and Environment, Boston University, Boston, Massachusetts
+
 <sup>2 </sup> Institute for Risk and Disaster Reduction, University of College London, London, United Kingdom
+
 <sup>3 </sup> Atmospheric Sciences & Global Change, Pacific Northwest National Laboratory, Richland, Washington
+
 <sup>4 </sup> Rosenstiel School of Marine and Atmospheric, and Earth Science, University of Miami, Miami, Florida
 
 \* corresponding author:  wangly@bu.edu
@@ -18,7 +21,7 @@ The sensitivity of urban canopy air temperature (T_a) to anthropogenic heat flux
 
 ## Journal reference
 
-Wang, L., T. Sun, W. Zhou, & D. Li (2022). Decipher the sensitivity of urban canopy air temperature to anthropogenic heat flux with a forcing-feedback framework. Journal of Climate, in preparation.
+Wang, L., T. Sun, W. Zhou, M. Liu, & D. Li (2022). Decipher the sensitivity of urban canopy air temperature to anthropogenic heat flux with a forcing-feedback framework. Journal of Climate, in preparation.
 
 ## Code reference
 
