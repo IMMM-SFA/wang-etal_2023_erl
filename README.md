@@ -4,18 +4,21 @@ _your zenodo badge here_
 
 **Decipher the sensitivity of urban canopy air temperature to anthropogenic heat flux with a forcing-feedback framework**
 
-Linying Wang<sup>1</sup> and Dan Li<sup>1\*</sup>
+Linying Wang\*<sup>1</sup>, Ting Sun<sup>2\*</sup>, Wenyu Zhou<sup>3\*</sup>, Maofeng Liu<sup>4\*</sup> and Dan Li<sup>1</sup>
 
-<sup>1 </sup> Department of Earth and Environment, Boston University, 685 Commonwealth Avenue, Boston, MA 02215, USA 
+<sup>1 </sup> Department of Earth and Environment, Boston University, Boston, Massachusetts
+<sup>2 </sup> Institute for Risk and Disaster Reduction, University of College London, London, United Kingdom
+<sup>3 </sup> Atmospheric Sciences & Global Change, Pacific Northwest National Laboratory, Richland, Washington
+<sup>4 </sup> Rosenstiel School of Marine and Atmospheric, and Earth Science, University of Miami, Miami, Florida
 
-\* corresponding author:  lidan@bu.edu
+\* corresponding author:  wangly@bu.edu
 
 ## Abstract
-Energy consumption is increasing strikingly with population and economic development. The emitted aAnthropogenic heat flux is an important control of the urban thermal environmentA vital heating mechanism for the urban environment and can exacerbate the heat stress that threatens public health. Due to the intrinsic complexities of land-atmosphere interactions and feedback mechanisms, Although tthe sensitivity of urban canopy air temperature (T_a) warming to anthropogenic heat flux (i.e., ∆T_a/Q_AH) varies is known to vary greatly with space and time, and the key factors controlling such variabilities remains elusive. Based on the urban climate model CLMU simulations In this study, we employ develop a forcing-feedback framework based on the energy budget of the urban canopy layer (UCL) air to evaluate ∆T_a/Q_AHand apply it to diagnosing ∆T_a/∆Q_AH simulated by the Community Land Model Urban (CLMU), where ∆ represents a change and the involved feedback processes over the Contiguous United States. While the direct effect of Q_AH is to increase T_a, there are important This framework is developed based on the urban canopy layer (UCL) air energy budget, which is similar to the global climate sensitivity analysis based on top-of-atmosphere energy balance. Key feedbacks mechanisms are identified to be associated with changes in surface temperatures and the atmosphere-canopy air heat conductance (c_a). In summer, the positive feedbacks and negative feedbacks nearly cancel each other and hence the sensitivity ∆T_a/∆Q_AH is mostly controlled by the direct effect. In winter, hHowever, due to weakened negative feedback during wintertime, the total feedback effect enhances sensitivity ∆T_a/∆Q_AH is enhanced by 15% compared to the direct effect. We also find that the spatiotemporal variability of ∆T_a/∆Q_AH is highly related tocorrelated with the variability of c_a. A weaker solar radiation and a lower wind speed could decreasereduce the buoyancy flux effect and friction stressfriction velocity within UCL, leading a more stable conditionless turbulent transport of heat and thus a smaller c_a. As a result, ∆T_a/∆Q_AH is thus larger in the morning at diurnal scales and even enhanced by positive feedback effectsand in winter at seasonal scales. The results suggest that the framework may help improve our understanding of the physical processes involved in how anthropogenic heat influences urban climate and human health.
+The sensitivity of urban canopy air temperature (T_a) to anthropogenic heat flux (Q_AH) is known to vary with space and time, but the key factors controlling such spatiotemporal variabilities remain elusive. In this study, we develop a forcing-feedback framework based on the energy budget of air within the urban canopy layer and apply it to diagnosing ∆T_a/∆Q_AH simulated by the Community Land Model Urban (CLMU), where ∆ represents a change. Besides the direct effect of Q_AH on T_a, there are important feedbacks through changes in the surface temperature, the atmosphere-canopy air heat conductance (c_a), and the surface-canopy air heat conductance. In summer, the positive and negative feedbacks nearly cancel each other and ∆T_a/∆Q_AH is mostly controlled by the direct effect. In winter, however, ∆T_a/∆Q_AH is enhanced due to the weakened negative feedback. The spatiotemporal variability of ∆T_a/∆Q_AH and the nonlinear response of ∆T_a  to ∆Q_AH  are strongly related to the variability of c_a, highlighting the importance of correctly parameterizing convective heat transfer in urban canopy models. 
 
 ## Journal reference
 
-Wang, L., & Li, D. (2021). Decipher the sensitivity of urban canopy air temperature to anthropogenic heat flux with a forcing-feedback framework. Journal of Climate, in preparation.
+Wang, L., T. Sun, W. Zhou, & D. Li (2022). Decipher the sensitivity of urban canopy air temperature to anthropogenic heat flux with a forcing-feedback framework. Journal of Climate, in preparation.
 
 ## Code reference
 
