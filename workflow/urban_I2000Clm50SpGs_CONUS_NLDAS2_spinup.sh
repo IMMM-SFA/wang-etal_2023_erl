@@ -20,7 +20,6 @@ rm -rf $CASENAME
 rm -rf $RUNDIR/${tag}
 cd ${BASE_DIR}/cesm/cime/scripts
 
-#./create_newcase --case $CASENAME --res CLM_USRDAT --compset I2000Clm50SpGs --mach cori-haswell  --compiler intel --run-unsupported
 ./create_newcase --case $CASENAME --res CLM_USRDAT --compset I2000Clm50SpGs --mach cori-haswell  --compiler intel --project m2702 --run-unsupported
 
 #------- in case directory ---------------------------
@@ -29,10 +28,7 @@ cd $CASENAME
 ./xmlchange NTASKS=${NTASKS}
 ./xmlchange NTASKS_ESP=1
 
-#./xmlchange DOUT_S_SAVE_INTERIM_RESTART_FILES=TRUE
-#./xmlchange DOUT_S=FALSE
 ./xmlchange CLM_BLDNML_OPTS='-bgc sp'
-
 ./xmlchange DATM_MODE=CLM1PT
 ./xmlchange DIN_LOC_ROOT=${CESM_INPUTDATA_DIR}
 ./xmlchange DIN_LOC_ROOT_CLMFORC="\$DIN_LOC_ROOT/atm/datm7"
@@ -43,7 +39,6 @@ cd $CASENAME
 ./xmlchange DATM_CLMNCEP_YR_START=${DATM_START_YEAR}
 ./xmlchange DATM_CLMNCEP_YR_END=${DATM_END_YEAR}
 
-#./xmlchange RUN_STARTDATE=${YEAR_START}-01-01
 ./xmlchange STOP_OPTION=$STOP_OPTION
 ./xmlchange STOP_N=$STOP_N
 ./xmlchange REST_OPTION=$REST_OPTION
@@ -51,8 +46,6 @@ cd $CASENAME
 
 ./xmlchange JOB_WALLCLOCK_TIME=48:00:00 --subgroup case.run
 ./xmlchange JOB_WALLCLOCK_TIME=01:00:00 --subgroup case.st_archive
-#./xmlchange JOB_WALLCLOCK_TIME=00:30:00 --subgroup case.run
-#./xmlchange JOB_QUEUE=debug --force
 
 ./case.setup
 

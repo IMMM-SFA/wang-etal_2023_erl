@@ -1,7 +1,9 @@
 #!/bin/bash
 #-------- create new case ----------------------------
-#tag=urban_I2000Clm50SpGs_CONUS_NLDAS2_CTL
-tag=urban_I2000Clm50SpGs_CONUS_NLDAS2_AH3
+tag=urban_I2000Clm50SpGs_CONUS_NLDAS2_CTL
+#tag=urban_I2000Clm50SpGs_CONUS_NLDAS2_AH1
+#tag=urban_I2000Clm50SpGs_CONUS_NLDAS2_AH2
+#tag=urban_I2000Clm50SpGs_CONUS_NLDAS2_AH3
 BASE_DIR=/global/project/projectdirs/m2702/wangly
 CASENAME=${BASE_DIR}/urban_runs/${tag}
 RUNDIR=/global/cscratch1/sd/wangly
@@ -21,7 +23,6 @@ rm -rf $CASENAME
 rm -rf $RUNDIR/${tag}
 cd ${BASE_DIR}/cesm/cime/scripts
 
-#./create_newcase --case $CASENAME --res CLM_USRDAT --compset I2000Clm50SpGs --mach cori-haswell  --compiler intel --run-unsupported
 ./create_newcase --case $CASENAME --res CLM_USRDAT --compset I2000Clm50SpGs --mach cori-haswell  --compiler intel --project m2702 --run-unsupported
 
 #------- in case directory ---------------------------
@@ -30,11 +31,8 @@ cd $CASENAME
 ./xmlchange NTASKS=${NTASKS}
 ./xmlchange NTASKS_ESP=1
 
-#./xmlchange DOUT_S_SAVE_INTERIM_RESTART_FILES=TRUE
-#./xmlchange DOUT_S=FALSE
 ./xmlchange CLM_BLDNML_OPTS='-bgc sp'
 ./xmlchange ATM_NCPL=24 #time step
-
 ./xmlchange DATM_MODE=CLM1PT
 ./xmlchange DIN_LOC_ROOT=${CESM_INPUTDATA_DIR}
 ./xmlchange DIN_LOC_ROOT_CLMFORC="\$DIN_LOC_ROOT/atm/datm7"
@@ -55,8 +53,6 @@ cd $CASENAME
 
 ./xmlchange JOB_WALLCLOCK_TIME=24:00:00 --subgroup case.run
 ./xmlchange JOB_WALLCLOCK_TIME=01:00:00 --subgroup case.st_archive
-#./xmlchange JOB_WALLCLOCK_TIME=00:30:00 --subgroup case.run
-#./xmlchange JOB_QUEUE=debug --force
 
 ./case.setup
 

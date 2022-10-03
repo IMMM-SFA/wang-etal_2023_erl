@@ -233,7 +233,7 @@ contains
 
     real(r8), parameter :: wilting_point_smp_greenroof = -150000._r8 ! Soil matric potential at wilting point on green roof (mm)
     real(r8), parameter :: irrig_target_smp_greenroof  = -3400._r8   ! Target soil matric potential for irrigation on green roof (mm) (note: 3400 is a standard value for field capacity)
-    real(r8), parameter :: Qanthro = 0._r8 ! anthropogenic heat flux into the urban system (W/m2)
+    real(r8), parameter :: Qanthro = 0._r8 ! anthropogenic heat flux into the urban system (W/m2) CTL: 0;  AH1: 1;  AH2: 10;  AH3: 100
     real(r8), parameter :: Qanthro2 = 1._r8 ! anthropogenic heat flux into the urban system (W/m2)
     !-----------------------------------------------------------------------
 
