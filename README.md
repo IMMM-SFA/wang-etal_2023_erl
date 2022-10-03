@@ -4,7 +4,7 @@ _your zenodo badge here_
 
 **Decipher the sensitivity of urban canopy air temperature to anthropogenic heat flux with a forcing-feedback framework**
 
-Linying Wang\*<sup>1</sup>, Ting Sun<sup>2</sup>, Wenyu Zhou<sup>3</sup>, Maofeng Liu<sup>4</sup> and Dan Li<sup>1</sup>
+Linying Wang<sup>1\*</sup>, Ting Sun<sup>2</sup>, Wenyu Zhou<sup>3</sup>, Maofeng Liu<sup>4</sup> and Dan Li<sup>1</sup>
 
 <sup>1 </sup> Department of Earth and Environment, Boston University, Boston, Massachusetts
 
