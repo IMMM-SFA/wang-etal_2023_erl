@@ -1,4 +1,4 @@
-_your zenodo badge here_
+https://doi.org/10.57931/1890465
 
 # wang-etal_2022_jc
 
