@@ -1,4 +1,4 @@
-[MSD-LIVE](https://doi.org/10.57931/1890465)
+[![DOI](https://data.msdlive.org/badge/DOI/10.57931/1890465.svg)](https://doi.org/10.57931/1890465)
 
 # wang-etal_2022_jc
 
