@@ -42,15 +42,6 @@ begin
       end if
     end do
   end do
-  ; print(cnt)
-  ; print(cnt2)
-  ; print(cnt3)
-
-  ; var_r2 = new((/2/),float)
-  ; var_r2(0)=escorc(var2(:,0),var2(:,2))
-  ; var_r2(1)=escorc(var2(:,1),var2(:,3))
-  ; ;var_r2 = decimalPlaces(var_r2,2,True)
-  ; print(var_r2)
 
   opt = True
   opt@PrintStat = False
@@ -68,12 +59,7 @@ begin
     yval2(i,1) = statb(1)
     outlier(i,0) = statb(0)-statb(1)*3
     outlier(i,1) = statb(0)+statb(1)*3
-    ; outlier(i,0) = statb(6)-1.5*(statb(10)-statb(6)) ;statb(0)-statb(1)*3
-    ; outlier(i,1) = statb(10)+1.5*(statb(10)-statb(6)) ;statb(0)+statb(1)*3
   end do
-  ;print(yval2)
-
-  print(outlier)
 
   var3=var2
   cnt1=0
@@ -100,7 +86,6 @@ begin
   var_r2 = new((/2/),float)
   var_r2(0)=escorc(var3(:,0),var3(:,2))
   var_r2(1)=escorc(var3(:,1),var3(:,3))
-  ;var_r2 = decimalPlaces(var_r2,2,True)
   print(var_r2)
 
   x = (/-3., -1., 1., 3./)	
@@ -111,10 +96,7 @@ begin
   print(var4)
 
   arr    = fspan(4,18,15)*0.001
-  ;arr    = fspan(4,20,15)*0.001
   colors = ispan(9,255,16)
-  ;print(colors)
-  ;colors = ispan(5,20,1)
 
   vpx = (/0.08,0.52/)
   vpy = (/0.95,0.71/)
@@ -203,7 +185,6 @@ begin
   lbres@vpHeightF          = 0.38  
   lbres@lbFillColors       = colors
   lbres@lbMonoFillPattern  = True
-  ;lbres@lbOrientation      = "Horizontal"
   lbres@lbPerimOn          = False
   lbres@lbLabelFontHeightF = 0.011
   lbres@lbLabelAlignment   = "InteriorEdges"
