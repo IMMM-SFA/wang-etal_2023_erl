@@ -21,7 +21,7 @@ The sensitivity of urban canopy air temperature (*T<sub>a</sub>*) to anthropogen
 
 ## Journal reference
 
-Wang, L., T. Sun, W. Zhou, M. Liu, & D. Li (2023). Decipher the sensitivity of urban canopy air temperature to anthropogenic heat flux with a forcing-feedback framework. Environmental Research Letters, under review.
+Wang, L., Sun, T., Zhou, W., Liu, M., & Li, D. (2023). Deciphering the sensitivity of urban canopy air temperature to anthropogenic heat flux with a forcing-feedback framework. Environmental Research Letters, 18(9), 094005. https://doi.org/10.1088/1748-9326/ace7e0
 
 ## Code reference
 
